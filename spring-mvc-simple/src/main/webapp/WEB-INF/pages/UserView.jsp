@@ -18,7 +18,7 @@
 </style>
 </head>
 <body>
-	<%@ include file="Header.jsp"%>
+	<%-- <%@ include file="Header.jsp"%> --%>
 	<sf:form method="post" modelAttribute="form">
 		<div align="center">
 			<c:if test="${form.id>0}">
@@ -70,6 +70,6 @@
 			</table>
 		</div>
 	</sf:form>
-	<%@ include file="Footer.jsp"%>
+<%-- 	<%@ include file="Footer.jsp"%> --%>
 </body>
 </html>

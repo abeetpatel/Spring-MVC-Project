@@ -20,7 +20,7 @@ import com.rays.service.UserService;
 import com.rays.util.DataUtility;
 
 @Controller
-@RequestMapping(value = "User")
+@RequestMapping(value = "/ctl/User")
 public class UserCtl {
 
 	@Autowired
@@ -128,13 +128,13 @@ public class UserCtl {
 
 		if (operation.equals("add")) {
 
-			return "redirect:/User";
+			return "redirect:/ctl/User";
 
 		}
 
 		if (operation.equals("reset")) {
 
-			return "redirect:/User/search";
+			return "redirect:/ctl/User/search";
 
 		}
 

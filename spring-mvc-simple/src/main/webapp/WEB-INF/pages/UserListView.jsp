@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@ include file="Header.jsp"%>
+	<%-- <%@ include file="Header.jsp"%> --%>
 	<sf:form method="post" modelAttribute="form">
 		<sf:hidden path="pageNo" />
 		<table>
@@ -68,6 +68,6 @@
 			</tr>
 		</table>
 	</sf:form>
-	<%@ include file="Footer.jsp"%>
+	<%-- <%@ include file="Footer.jsp"%> --%>
 </body>
 </html>
