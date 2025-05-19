@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ page isELIgnored="false"%>
+
 
 <!DOCTYPE html>
 <html>
@@ -20,7 +20,7 @@
 	<div align="center">
 		<h1>spring-mvc-simple</h1>
 		<h1>${ msg }</h1>
-		<a href="Welcome/getMessage">Click for message</a>
+		<a href="Welcome/getMessage">Click here for message</a>
 	</div>
 
 </body>

@@ -2,9 +2,11 @@ package com.rays.form;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
-public class UserRegistrationForm {
+public class UserForm {
 
 	protected long id = 0;
+
+	private Long[] ids;
 
 	@NotEmpty(message = "first name is required")
 	private String firstName;
@@ -24,12 +26,22 @@ public class UserRegistrationForm {
 	@NotEmpty(message = "address is required")
 	private String address;
 
+	private int pageNo;
+
 	public long getId() {
 		return id;
 	}
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public Long[] getIds() {
+		return ids;
+	}
+
+	public void setIds(Long[] ids) {
+		this.ids = ids;
 	}
 
 	public String getFirstName() {
@@ -78,6 +90,14 @@ public class UserRegistrationForm {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public int getPageNo() {
+		return pageNo;
+	}
+
+	public void setPageNo(int pageNo) {
+		this.pageNo = pageNo;
 	}
 
 }

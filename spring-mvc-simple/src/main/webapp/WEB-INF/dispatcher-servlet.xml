@@ -13,6 +13,8 @@
 
 	<import resource="hibernate-servlet.xml" />
 
+	<mvc:annotation-driven />
+
 	<bean id="ViewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/pages/"></property>
