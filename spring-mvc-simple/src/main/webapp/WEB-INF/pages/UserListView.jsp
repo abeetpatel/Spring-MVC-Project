@@ -13,6 +13,11 @@
 <body>
 	<%-- <%@ include file="Header.jsp"%> --%>
 	<sf:form method="post" modelAttribute="form">
+		<div align="center">
+			<h1 style="color: navy">
+				<s:message code="user.label.userList" />
+			</h1>
+		</div>
 		<sf:hidden path="pageNo" />
 		<table>
 			<tr>
@@ -22,10 +27,12 @@
 						<sf:options items="${userList}" itemValue="id"
 							itemLabel="firstName" />
 					</sf:select>&nbsp; &nbsp;</td>
-				<td><input type="submit" name="operation" value="search"><input type="submit" name="operation" value="reset">
-				</td>
+				<td><input type="submit" name="operation"
+					value="<s:message code="button.search" />"><input type="submit" name="operation"
+					value="<s:message code="button.reset" />"></td>
 			</tr>
 		</table>
+		<br>
 		<table style="width: 100%" border="1">
 			<tr>
 				<th>Select</th>
@@ -57,13 +64,14 @@
 		<table style="width: 100%">
 			<tr>
 				<td style="width: 30%"><input type="submit" name="operation"
-					value="previous" ${form.pageNo == 1 ? 'disabled="disabled"' : ''} /></td>
+					value="<s:message code="button.previous" />"
+					${form.pageNo == 1 ? 'disabled="disabled"' : ''} /></td>
 				<td style="width: 30%"><input type="submit" name="operation"
-					value="add"></td>
+					value="<s:message code="button.add" />"></td>
 				<td style="width: 25%"><input type="submit" name="operation"
-					value="delete"></td>
+					value="<s:message code="button.delete" />"></td>
 				<td style="text-align: right;"><input type="submit"
-					name="operation" value="next"
+					name="operation" value="<s:message code="button.next" />"
 					${list.size() < 5 ? 'disabled="disabled"' : ''}></td>
 			</tr>
 		</table>
